@@ -6,4 +6,10 @@ def main(list1):
     Returns:
         list: return answer.
     """
-    return
+    l=len(list1)
+    for i in range(l//2):
+        value=list1[i]
+        list1[i]=list1[l-1-i]
+        list1[l-1-i]=value
+
+    return list1
