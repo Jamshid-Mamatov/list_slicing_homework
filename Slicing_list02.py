@@ -12,4 +12,4 @@ def main(list1):
         list1[i]=list1[l-1-i]
         list1[l-1-i]=value
 
-    return list1
+    return list1[::-1]
